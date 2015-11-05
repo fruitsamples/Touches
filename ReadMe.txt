@@ -19,19 +19,19 @@ After you see how single touches work, try moving more than one piece. The appli
 
 If you drag one piece over another, the top piece "captures" the piece below, hiding it. This demonstrates how, with one touch, you can drag multiple items. If you want to "unstick" pieces, double tap anywhere on the background (not on the pieces).
 
-Before your application can handle multiple events, it must call the method setMultipleTouchEnabled:. The methods touchesBegan:withEvent:, touchesMoved:withEvent:, touchesEnded:withEvent: show how to handle each phase of a multiple touch event. By looking at the code, you'll see that to handle multiple touches at the same time, you need to iterate through all the touch objects passed to each of the touch handling methods, handling each touch separately. Touches does this by calling a "dispatch" method that checks to see which piece the touch is in, and the takes the appropriate action. 
+Before your application can handle multiple events, it must enable them, either by setting the flag in Interface Builder, or by calling setMultipleTouchEnabled:. The methods touchesBegan:withEvent:, touchesMoved:withEvent:, touchesEnded:withEvent: show how to handle each phase of a multiple touch event. By looking at the code, you'll see that to handle multiple touches at the same time, you need to iterate through all the touch objects passed to each of the touch handling methods, handling each touch separately. Touches does this by calling a "dispatch" method that checks to see which piece the touch is in, and the takes the appropriate action. 
 
 Touches is based on the Cocoa Touch Application template, which provides a starting point for most applications that need a UIView subclass that responds to touches. 
 
 ================================================================================
 BUILD REQUIREMENTS:
 
-Mac OS X v10.5.3, Xcode 3.1, iPhone OS 2.0
+iPhone SDK 3.0
 
 ================================================================================
 RUNTIME REQUIREMENTS:
 
-Mac OS X v10.5.3, iPhone OS 2.0
+iPhone OS 3.0
 
 ================================================================================
 PACKAGING LIST:
@@ -45,14 +45,13 @@ The UIApplication  delegate. On start up, this object receives the applicationDi
 
 MyView.h
 MyView.m
-This view builds the  application user interface. It also implements the touches... methods that respond to user interaction. MyView animates and moves pieces onscreen in response to touch events. It also displays text that shows the touch phase and other information about touches.
-
-PieceView.h
-PieceView.m
-This view creates pieces using an image.
+This view implements the touches... methods that respond to user interaction. MyView animates and moves pieces onscreen in response to touch events. It also displays text that shows the touch phase and other information about touches.
 
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
+
+Version 1.8
+-Now uses nibs for view creation. Status bar is now displayed on launch. Project updated to use the iPhone 3.0 SDK.
 
 Version 1.7
 -Updated for and tested with iPhone OS 2.0. First public release.

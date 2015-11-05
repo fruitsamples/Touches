@@ -15,10 +15,10 @@
 		1B307E580DB80342001EC7C1 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B307E570DB80342001EC7C1 /* MyView.m */; };
 		1B39F46D0DDCF87400791EE9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B39F46B0DDCF87400791EE9 /* MainWindow.xib */; };
 		1D3623260D0F684500981E51 /* TouchesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TouchesAppDelegate.m */; };
-		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		63C348DA0F8C1E0000E00C58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C348D90F8C1E0000E00C58 /* CoreGraphics.framework */; };
+		63C348DC0F8C1E0000E00C58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C348DB0F8C1E0000E00C58 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,14 +31,14 @@
 		1B307E570DB80342001EC7C1 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		1B39F46C0DDCF87400791EE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		1B79D8DB0DB8050200CF9BA3 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
-		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* TouchesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchesAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* TouchesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchesAppDelegate.m; sourceTree = "<group>"; };
-		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Touches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Touches_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touches_Prefix.pch; sourceTree = "<group>"; };
+		63C348D90F8C1E0000E00C58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63C348DB0F8C1E0000E00C58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,9 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				63C348DA0F8C1E0000E00C58 /* CoreGraphics.framework in Frameworks */,
+				63C348DC0F8C1E0000E00C58 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,21 +75,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B01A56A0DB7F41A004CB5C1 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				1B29A3EF0DC7C99E0091484A /* CyanSquare.png */,
-				1B29A3F20DC7C99E0091484A /* MagentaSquare.png */,
-				1B29A3F30DC7C99E0091484A /* YellowSquare.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				1B79D8DB0DB8050200CF9BA3 /* ReadMe.txt */,
-				1B01A56A0DB7F41A004CB5C1 /* Images */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -112,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				1B39F46B0DDCF87400791EE9 /* MainWindow.xib */,
+				1B29A3EF0DC7C99E0091484A /* CyanSquare.png */,
+				1B29A3F20DC7C99E0091484A /* MagentaSquare.png */,
+				1B29A3F30DC7C99E0091484A /* YellowSquare.png */,
 				1B29A3F00DC7C99E0091484A /* Default.png */,
 				1B29A3F10DC7C99E0091484A /* Icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -122,9 +114,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				63C348D90F8C1E0000E00C58 /* CoreGraphics.framework */,
+				63C348DB0F8C1E0000E00C58 /* Foundation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				1D30AB110D05D00D00671497 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,7 +241,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
 		};
@@ -263,7 +255,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
 		};
