@@ -23,6 +23,9 @@ iOS 3.2 or later
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
+Version 1.13
+-Set Base SDK to "Latest iOS" option.
+
 Version 1.12
 -Deployment Target set to iOS 3.2
 
